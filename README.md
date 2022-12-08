@@ -18,10 +18,12 @@ None
 No License
 
 ### Walkthrough video:
-https://drive.google.com/file/d/1X1pU9fWOTz_q-squPuvfvaM0WUSN9Mat/view
+https://drive.google.com/file/d/198kzAEI75ZnfT3C0k96oTSEonM58b6H6/view
+### Walkthrough video 
 
 ### Screenshot:
 
-<img width="1728" alt="Screen Shot 2022-12-07 at 11 09 44 PM" src="https://user-images.githubusercontent.com/111080921/206355508-4d222320-d5a9-46b3-ad9f-f82e7d4c4056.png">
+
+<img width="1728" alt="Screen Shot 2022-12-07 at 11 27 26 PM" src="https://user-images.githubusercontent.com/111080921/206356623-d7c97768-988d-4f61-bb6c-9834138c3d08.png">
 
 
