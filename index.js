@@ -10,6 +10,7 @@ const teamMember = [];
 
 
 
+//promp questions for manager//
 
 inquirer.prompt([
     {
@@ -34,14 +35,16 @@ inquirer.prompt([
     },
 
 ]).then((res)=>{
-    
+    //getting the user input
     const manager = new Manager(res.name, res.id, res.email, res.ofNumber);
+    //pushing into emmpty arrray of Team Mmembers
     teamMember.push(manager);
     menu();
    
 
 })
 
+// defining function with few choice and using swith method to call following functions
 function menu(){
     inquirer.prompt({
         name:"buildTeam",
@@ -133,7 +136,6 @@ const html =     ` <!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-        <link rel="stylysheet" href="../Assets/style.css"></link>
     <title>Team Generator</title>
 </head>
 <body>.
