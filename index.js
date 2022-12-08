@@ -132,13 +132,14 @@ const html =     ` <!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylysheet" href="./Assets/style.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylysheet" href="../Assets/style.css"></link>
     <title>Team Generator</title>
 </head>
 <body>.
-    <header>
-    <h1>My team</h1>
-    </header>
+<div class="jumbotron container-fluid ml-30 mt-2 text-center p-2" style="background-color:#404040 ;color: white;">
+<h1> My Team</h1>
+</div>
     ${teamMember.join("")}
    
      </body>

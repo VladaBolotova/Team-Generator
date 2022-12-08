@@ -1,3 +1,13 @@
-h1{
-    
+body{
+    background-color: aqua;
+}
+
+header{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
