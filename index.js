@@ -125,73 +125,30 @@ const addIntern =()=> {
 })
 }
 
-const createTeam =(teamMember)=>{
+const createTeam =()=>{
+const html =     ` <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylysheet" href="./Assets/style.css"></link>
+    <title>Team Generator</title>
+</head>
+<body>.
+    <header>
+    <h1>My team</h1>
+    </header>
+    ${teamMember.join("")}
+   
+     </body>
+    </html>
+ 
+`        
 
-const managerFunction = (manager) => {
-    const maHtml = `
-    <div class="box">
-    <div class="name"${manager.name} Manager>
-    </div>
-    <ul class="list">
-    <li class="list-item">ID ${manager.id}</li>
-    <li class="list-item">Email: <span id="email"><a href="mailto:${manager.email}"></a></span></li>
-    <li class="list-item">Office number: ${manager.ofNumber}</li>
-    </ul>
-    </div>`
-}
-const engineerFunction = (engineer) => {
-    const enHtml = `
-    <div class="box">
-    <div class="name"${engineer.name} Engineer>
-    </div>
-    <ul class="list">
-    <li class="list-item">ID ${engineer.id}</li>
-    <li class="list-item">Email: <span id="email"><a href="mailto:${engineer.email}"></a></span></li>
-    <li class="list-item">GitHub: <a href="https://github.com ${engineer.gitHub}"</li>
-    </ul>
-    </div>`
-}
-const internFunction = (intern) => {
-    const inHtml = `
-    <div class="box">
-    <div class="name"${intern.name} Intern>
-    </div>
-    <ul class="list">
-    <li class="list-item">ID ${intern.id}</li>
-    <li class="list-item">Email: <span id="email"><a href="mailto:${intern.email}"></a></span></li>
-    <li class="list-item">School: ${intern.school}"</li>
-    </ul>
-    </div>`
+
+
+    fs.writeFile('index.html', html, (err)=>
+        err ? console.error(err) : console.log('Team geterated succesfull'));
 }
 
-        
-
-// const htmlPage = createTeam();
-
-
-//     fs.writeFile('index.html', htmlPage, (err)=>
-//         err ? console.error(err) : console.log('Commit logged'));
-}
-
-const htmlPage = () =>{
-   return
-    ` <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylysheet" href="./Assets/style.css"></link>
-        <title>Team Generator</title>
-    </head>
-    <body>
-        <header>
-        <h1>My team</h1>
-        </header>
-        ${createTeam()}
-       
-         </body>
-        </html>
-     
-`
-}
